@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FURIA Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="landing-container">
+    <h1>Bem-vindo à FURIA</h1>
+    <p>Fale com nosso bot para saber mais sobre a equipe, jogadores e próximos campeonatos!</p>
+  </div>
+  <button id="open-chatbot" class="open-chatbot-btn">ABRI CHAT</button>
+
+  <div class="chatbot-popup hidden">
+    <div class="chat-header">
+      <div class="header-info">
+        <img src="img/klipartz.com.png" class="chatbot-logo" />
+        <span class="logo-text">FURIA Bot</span>
+      </div>
+      <button id="close-chatbot">×</button>
+    </div>
+
+    <div class="chat-body">
+      <div class="message bot-message">
+        <div class="message-text">Olá! Eu sou o bot da FURIA. Como posso ajudar?</div>
+      </div>
+    </div>
+
+    <div class="chat-footer">
+      <form class="chat-form">
+        <input type="text" placeholder="Digite sua mensagem..." class="message-input" />
+        <div class="chat-controls">
+          <button type="submit">➤</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
